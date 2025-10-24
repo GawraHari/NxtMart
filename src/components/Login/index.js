@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import {FaRegUserCircle} from 'react-icons/fa'
 import {MdOutlineLock} from 'react-icons/md'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import './index.css'
@@ -51,13 +52,11 @@ export default class Login extends Component {
   }
 
   render() {
-    const {
-      username,
-      password,
-      errorMessage,
-      showPassword,
-      showErrMsg,
-    } = this.state
+    const {username, password, errorMessage, showPassword, showErrMsg} =
+      this.state
+    const jwtToken = Cookies.get('jwt_token')
+    if(jwtToken !== undefined)
+      return <Redirect to="/"/>
 
     return (
       <div className="bgLogin">
