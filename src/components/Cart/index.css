@@ -1,0 +1,15 @@
+.cartBg {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emptyText {
+  text-align: center;
+}
+.emptyCartImage {
+  width: 48px;
+  height: 38px;
+  margin: 20px;
+  margin-bottom: 0;
+}
