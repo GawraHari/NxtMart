@@ -1,0 +1,16 @@
+.notFoundBg {
+  height: 100vh;
+}
+.nfContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+.nfContent h1 {
+  text-align: center;
+}
+.nfContent p {
+  text-align: center;
+}
