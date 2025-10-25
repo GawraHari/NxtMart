@@ -18,9 +18,23 @@ nav {
 .navListItem {
   list-style: none;
   padding: 8px;
+  font-size: 18px;
+  color: rgb(47, 40, 40);
+  margin-left: 8px;
+  font-weight: 600;
 }
 .navLink {
   text-decoration: none;
+}
+
+.highlightHome {
+  border-bottom: #088c03 solid 2px;
+  color: #088c03;
+}
+
+.highlightCart {
+  border-bottom: #088c03 solid 2px;
+  color: #088c03;
 }
 .website-logo {
   width: 100px;
@@ -56,4 +70,10 @@ nav {
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.homeIcon {
+  color: #088c03;
+}
+.cartIcon {
+  color: #088c03;
 }

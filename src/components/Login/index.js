@@ -52,11 +52,15 @@ export default class Login extends Component {
   }
 
   render() {
-    const {username, password, errorMessage, showPassword, showErrMsg} =
-      this.state
+    const {
+      username,
+      password,
+      errorMessage,
+      showPassword,
+      showErrMsg,
+    } = this.state
     const jwtToken = Cookies.get('jwt_token')
-    if(jwtToken !== undefined)
-      return <Redirect to="/"/>
+    if (jwtToken !== undefined) return <Redirect to="/" />
 
     return (
       <div className="bgLogin">
