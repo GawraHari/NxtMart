@@ -1,0 +1,23 @@
+.fView {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fView h1 {
+  text-align: center;
+}
+.fView p {
+  text-align: center;
+}
+.loader-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeBgCard{
+  min-height: 100vh;
+}

@@ -25,6 +25,7 @@ class Header extends Component {
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
+
   render() {
     const {activeTab} = this.state
 
