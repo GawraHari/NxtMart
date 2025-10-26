@@ -11,6 +11,7 @@ const EachCartItem = props => (
       return (
         <li>
           <img src={image} alt={name} />
+          {value}
         </li>
       )
     }}

@@ -47,14 +47,15 @@ class App extends Component {
 
   render() {
     const {cartItemsArray} = this.state
+    localStorage.setItem('cartItem', JSON.stringify(cartItemsArray))
 
     return (
       <MartContext.Provider
         value={{
           cartItemsArray,
-          addProductToCart: this.addProductToCart(),
-          incrementCartProductQuantity: this.incrementCartProductQuantity(),
-          decrementCartProductQuantity: this.decrementCartProductQuantity(),
+          addProductToCart: this.addProductToCart,
+          incrementCartProductQuantity: this.incrementCartProductQuantity,
+          decrementCartProductQuantity: this.decrementCartProductQuantity,
         }}
       >
         <Switch>
