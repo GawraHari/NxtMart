@@ -47,7 +47,7 @@ class App extends Component {
 
   render() {
     const {cartItemsArray} = this.state
-    localStorage.setItem('cartItem', JSON.stringify(cartItemsArray))
+    // localStorage.setItem('cartItem', JSON.stringify(cartItemsArray))
 
     return (
       <MartContext.Provider

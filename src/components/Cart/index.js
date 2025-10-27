@@ -5,14 +5,17 @@ import EachCartItem from '../EachCartItem'
 import './index.css'
 
 const Cart = () => {
-  const retreivedCartItemArray = localStorage.getItem('cartItem')
-  const cartItems = JSON.parse(retreivedCartItemArray)
-  const isCartEmpty = cartItems.length === 0
-  const totalCartItems = cartItems.length
+  // const retreivedCartItemArray = localStorage.getItem('cartItem')
+  // const cartItemsArray = JSON.parse(retreivedCartItemArray)
+  const cartItemsArray = []
+  const isCartEmpty = cartItemsArray.length === 0
+  const totalCartItems = cartItemsArray.length
   let totalAmount = 0
-  cartItems.forEach(eachItem => {
-    totalAmount += eachItem.count * eachItem.price
+  cartItemsArray.forEach(eachItem => {
+    // const priceEach = eachItem.price.slice(1)
+    totalAmount += eachItem.count * parseInt(eachItem.price.slice(1))
   })
+  console.log(isCartEmpty, totalCartItems, totalAmount)
   return (
     <>
       <Header />
@@ -29,18 +32,20 @@ const Cart = () => {
         ) : (
           <div>
             <h1>Items</h1>
-            <ul>
-              {cartItems.map(cartItem => (
-                <EachCartItem key={cartItem.id} cartItem={cartItem} />
-              ))}
-              <div>
+            <div className="cartItemsContainer">
+              <ul className="unOrderedList">
+                {cartItemsArray.map(cartItem => (
+                  <EachCartItem key={cartItem.id} cartItem={cartItem} />
+                ))}
+              </ul>
+              <div className="summaryContainer">
                 <h1>
                   Total ({totalCartItems} items) :
-                  <p data-testid="total-price">{totalAmount}</p>
+                  <p data-testid="total-price">₹ {totalAmount}</p>
                 </h1>
                 <button type="button">Checkout</button>
               </div>
-            </ul>
+            </div>
           </div>
         )}
       </div>

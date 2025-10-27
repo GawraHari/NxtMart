@@ -2,6 +2,7 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Footer from '../Footer'
+import HomeProducts from '../HomeProducts'
 
 import './index.css'
 
@@ -54,7 +55,7 @@ export default class Home extends Component {
     </div>
   )
 
-  renderSuccessView = () => <h1>Success</h1>
+  renderSuccessView = () => <HomeProducts />
 
   renderSwitch = () => {
     const {activeApiStatus} = this.state

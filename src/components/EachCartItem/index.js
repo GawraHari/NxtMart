@@ -5,11 +5,12 @@ const EachCartItem = props => (
   <MartContext.Consumer>
     {value => {
       const {decrementCartProductQuantity, incrementCartProductQuantity} = value
-
-      const {id, name, weight, price, image, count} = props
+      const {cartItem} = props
+      const {id, name, weight, price, image, count} = cartItem
+      console.log(id, count, weight, price)
 
       return (
-        <li>
+        <li data-testid="cartItem">
           <img src={image} alt={name} />
           {value}
         </li>
