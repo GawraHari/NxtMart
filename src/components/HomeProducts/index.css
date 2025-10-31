@@ -1,0 +1,22 @@
+.dataBg {
+  padding: 18px;
+  overflow: auto;
+  max-height: 100vh;
+}
+.dataBg-ul {
+  padding-left: 0;
+}
+.dataBg-li {
+  list-style: none;
+}
+.eachCatItems {
+  display: flex;
+  overflow-x: auto;
+  gap: 32px;
+}
+.eachCatItems::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+.dataBg::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}

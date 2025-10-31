@@ -14,11 +14,29 @@ class App extends Component {
     cartItemsArray: [],
   }
 
-  addProductToCart = product => {
-    // const {cartItemsArray} = this.state
-    this.setState(prev => ({
-      cartItemsArray: {...prev.cartItemsArray, product},
-    }))
+  // componentDidMount() {
+  //   const cartItemsArrayFromLocalStorage = JSON.parse(
+  //     localStorage.getItem('cartItems'),
+  //   )
+  //   if (cartItemsArrayFromLocalStorage !== undefined)
+  //     this.setState({cartItemsArray: cartItemsArrayFromLocalStorage})
+  // }
+
+  addProductToCart = prd => {
+    const {cartItemsArray} = this.state
+    const product = {...prd, count: 1}
+    // this.setState(prev => ({
+    //   cartItemsArray: [...prev.cartItemsArray, product],
+    // }))
+
+    const updatedCart = [...cartItemsArray, product]
+    this.setState({cartItemsArray: updatedCart})
+  }
+
+  removeProductFromCart = id => {
+    const {cartItemsArray} = this.state
+    const updatedCartList = cartItemsArray.filter(each => each.id !== id)
+    this.setState({cartItemsArray: updatedCartList})
   }
 
   incrementCartProductQuantity = id => {
@@ -48,12 +66,13 @@ class App extends Component {
   render() {
     const {cartItemsArray} = this.state
     // localStorage.setItem('cartItem', JSON.stringify(cartItemsArray))
-
+    console.log(cartItemsArray)
     return (
       <MartContext.Provider
         value={{
           cartItemsArray,
           addProductToCart: this.addProductToCart,
+          removeProductFromCart: this.removeProductFromCart,
           incrementCartProductQuantity: this.incrementCartProductQuantity,
           decrementCartProductQuantity: this.decrementCartProductQuantity,
         }}

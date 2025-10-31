@@ -6,6 +6,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 1px 8px orange;
   @media screen and (max-width: 768px) {
     display: none;
   }

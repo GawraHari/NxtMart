@@ -3,6 +3,7 @@ import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Footer from '../Footer'
 import HomeProducts from '../HomeProducts'
+import CatBar from '../CatBar'
 
 import './index.css'
 
@@ -15,10 +16,16 @@ const apiStatus = {
 export default class Home extends Component {
   state = {
     activeApiStatus: apiStatus.init,
+    activeCatId: 'All',
+    allProducts: [],
   }
 
   componentDidMount() {
     this.getData()
+  }
+
+  changeCatId = cat => {
+    this.setState({activeCatId: cat})
   }
 
   getData = async () => {
@@ -29,7 +36,10 @@ export default class Home extends Component {
     const data = await res.json()
     console.log(data)
     if (res.ok) {
-      this.setState({activeApiStatus: apiStatus.success})
+      this.setState({
+        activeApiStatus: apiStatus.success,
+        allProducts: data.categories,
+      })
     } else {
       this.setState({activeApiStatus: apiStatus.failure})
     }
@@ -55,7 +65,19 @@ export default class Home extends Component {
     </div>
   )
 
-  renderSuccessView = () => <HomeProducts />
+  renderSuccessView = () => {
+    const {activeCatId, allProducts} = this.state
+    return (
+      <div className="productsBg">
+        <CatBar
+          activeCatId={activeCatId}
+          changeCatId={this.changeCatId}
+          allProducts={allProducts}
+        />
+        <HomeProducts activeCatId={activeCatId} allProducts={allProducts} />
+      </div>
+    )
+  }
 
   renderSwitch = () => {
     const {activeApiStatus} = this.state
@@ -72,8 +94,6 @@ export default class Home extends Component {
   }
 
   render() {
-    // const {activeCategory} = this.state
-
     return (
       <>
         <Header />

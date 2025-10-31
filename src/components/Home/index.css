@@ -21,3 +21,9 @@
 .homeBgCard {
   min-height: 100vh;
 }
+.productsBg{
+  min-width: 100vh;
+  background-color: white;
+  display: flex;
+  padding: 25px;
+}
