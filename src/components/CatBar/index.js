@@ -3,7 +3,7 @@ import './index.css'
 const CatBar = props => {
   const {activeCatId, changeCatId, allProducts} = props
   const highlightCls = activeCatId === 'All' ? 'highlight' : 'normal'
-  console.log(activeCatId)
+  // console.log(activeCatId)
 
   return (
     <div className="catBarBg">

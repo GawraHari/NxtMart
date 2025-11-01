@@ -34,7 +34,7 @@ export default class Home extends Component {
       'https://apis2.ccbp.in/nxt-mart/category-list-details',
     )
     const data = await res.json()
-    console.log(data)
+    // console.log(data)
     if (res.ok) {
       this.setState({
         activeApiStatus: apiStatus.success,

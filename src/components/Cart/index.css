@@ -1,6 +1,7 @@
 .cartBg {
   min-height: 90vh;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -12,4 +13,17 @@
   height: 38px;
   margin: 20px;
   margin-bottom: 0;
+}
+.cartItemsContainer {
+  width: 80%;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+}
+.unOrderedList {
+  width: 90%;
+  padding: 12px;
+}
+.summaryContainer{
+  list-style: none;
+  display: flex;
 }

@@ -55,7 +55,7 @@ class ProductItem extends Component {
                 <div>
                   <p>{name}</p>
                   <p>{weight}</p>
-                  <p>₹ {price.slice(1)} .00</p>
+                  <p>₹ {price.slice(1)}.00</p>
                 </div>
                 {count > 0 ? (
                   <div>
