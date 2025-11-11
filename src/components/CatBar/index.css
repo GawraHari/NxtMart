@@ -20,7 +20,8 @@
 }
 
 .catBar-ul::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
+  height: 80px;
 }
 .catBar-ul::-webkit-scrollbar-track {
   background-color: #f1f1f1;
@@ -28,7 +29,6 @@
 .catBar-ul::-webkit-scrollbar-thumb {
   background-color: #088c03;
   border-radius: 4px;
-  height: 250px;
 }
 
 .normal {

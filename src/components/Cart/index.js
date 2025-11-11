@@ -151,7 +151,6 @@ class Cart extends Component {
             </button>
           </div>
         )}
-
         <Footer />
       </div>
     )
