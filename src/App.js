@@ -28,9 +28,9 @@ class App extends Component {
         }}
       >
         <Switch>
-          <Route exact path="/Login" component={Login} />
-          <ProtectedRoute exact path="/" component={Home} />
-          <ProtectedRoute exact path="/cart" component={Cart} />
+          <Route exact path='/Login' component={Login} />
+          <ProtectedRoute exact path='/' component={Home} />
+          <ProtectedRoute exact path='/cart' component={Cart} />
           <NotFound />
         </Switch>
       </MartContext.Provider>
