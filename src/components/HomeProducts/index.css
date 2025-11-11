@@ -1,0 +1,40 @@
+.dataBg {
+  /* padding: 18px; */
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+.dataBg-ul {
+  padding-left: 0;
+}
+.dataBg-li {
+  list-style: none;
+}
+.catname {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+.eachCatItems {
+  display: flex;
+  overflow-x: scroll;
+  padding-left: 0;
+  max-width: 100vw;
+  margin-bottom: 25px;
+}
+.eachCatItems::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+.dataBg::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+.horizon {
+  width: 100%;
+  color: grey;
+  height: 1px;
+}
+.catIcon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

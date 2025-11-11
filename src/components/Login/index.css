@@ -1,0 +1,126 @@
+.bgLogin {
+  background-image: url('https://res.cloudinary.com/dndlbcblt/image/upload/v1761029342/Backgroundlg-backgroundImg_tcxm2k.jpg');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    background-image: url('https://res.cloudinary.com/dndlbcblt/image/upload/v1761029340/Backgroundsm-backgroundImg_gfwcdi.png');
+  }
+}
+.loginForm {
+  min-width: 30%;
+  top: 136px;
+  left: 428px;
+  border-radius: 16px;
+  padding: 64px;
+  gap: 40px;
+  opacity: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media screen and (max-width: 768px) {
+    max-width: 80%;
+    min-width: 400px;
+    height: 478px;
+    top: 161px;
+    left: 16px;
+    border-radius: 16px;
+    gap: 40px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 56px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+    padding-left: 64px;
+  }
+}
+.loginForm img {
+  width: 125px;
+  height: 85px;
+  opacity: 1;
+  align-self: center;
+}
+.inputContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #64748b;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 383px;
+  height: 40px;
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    border-radius: 8px;
+    gap: 24px;
+    opacity: 1;
+    border-width: 1px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+  }
+}
+.inputContainer input {
+  border: none;
+  outline: none;
+  background-color: white;
+  padding-left: 8px;
+  font-size: 18px;
+}
+.vrt {
+  gap: 16px;
+  align-self: center;
+}
+.btn1 {
+  width: 383px;
+  height: 44px;
+  border-radius: 8px;
+  gap: 8px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background: #b3b3b3;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: bold;
+  @media screen and (max-width: 768px) {
+    width: 350px;
+  }
+}
+.btn2 {
+  background: #088c03;
+}
+.kut {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  vertical-align: middle;
+  color: #333333;
+}
+.showpwdInp {
+  height: 15px;
+  width: 15px;
+  accent-color: #088c03;
+}
+.cant {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.err {
+  color: #ef4444;
+}

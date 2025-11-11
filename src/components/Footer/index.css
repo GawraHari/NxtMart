@@ -1,0 +1,48 @@
+.footerbg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003f00;
+  min-width: 768px;
+  height: 379px;
+  justify-content: space-between;
+  opacity: 1;
+  position: relative;
+  bottom: 0;
+  padding-top: 48px;
+  padding-right: 80px;
+  padding-bottom: 48px;
+  padding-left: 80px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.ft1 {
+  width: 40%;
+  height: 144px;
+  gap: 32px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.ft1 p {
+  text-align: center;
+  font-size: 25px;
+}
+.socialIconsContainer {
+  width: 360px;
+  height: 48px;
+  gap: 56px;
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+.copy {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}

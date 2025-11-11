@@ -1,0 +1,35 @@
+.fView {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fView h1 {
+  text-align: center;
+}
+.fView p {
+  text-align: center;
+}
+.loader-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeBgCard {
+  min-height: 100vh;
+  margin-top: 8px;
+}
+.productsBg {
+  min-width: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

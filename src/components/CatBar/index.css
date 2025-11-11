@@ -1,0 +1,63 @@
+.catBarBg {
+  padding: 18px;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+.catBarBg h1 {
+  color: #088c03;
+  margin-top: 0;
+}
+.catBar-ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  width: 200px;
+  height: 80vh;
+}
+
+.catBar-ul::-webkit-scrollbar {
+  width: 12px;
+}
+.catBar-ul::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.catBar-ul::-webkit-scrollbar-thumb {
+  background-color: #088c03;
+  border-radius: 4px;
+  height: 250px;
+}
+
+.normal {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  list-style: none;
+  width: 90%;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.highlight {
+  background-color: #088c03;
+  color: white;
+  border-radius: 8px;
+  width: 90%;
+  list-style: none;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.anchorTag {
+  text-decoration: none;
+  color: black;
+}
+.color {
+  color: white;
+}
