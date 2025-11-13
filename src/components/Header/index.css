@@ -12,6 +12,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
 .listContainer {
   padding-left: 0;
   display: flex;
@@ -51,10 +57,8 @@ nav {
 .mobileFooterBg {
   width: 100vw;
   height: 50px;
-  top: 752px;
   gap: 10px;
   opacity: 1;
-  border-width: 1px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
@@ -66,9 +70,14 @@ nav {
   border: 1px solid #d1d5db;
   box-shadow: 0px 7px 32px 0px #0000000d;
   align-items: center;
-  position: relative;
+  position: absolute;
   bottom: 0px;
   @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobileFooterBg {
     display: none;
   }
 }

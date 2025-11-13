@@ -93,7 +93,7 @@ class Cart extends Component {
                   <h1 className="emptyText">Your cart is empty</h1>
                 </div>
               ) : (
-                <div>
+                <div className="cartContainer">
                   <div className="mobileViewCartHeader">
                     <FaArrowLeft
                       size={20}

@@ -1,7 +1,14 @@
 .dataBg {
-  /* padding: 18px; */
   overflow-y: scroll;
-  max-height: 100vh;
+  max-height: 90vh;
+}
+@media screen and (max-width: 768px) {
+  .dataBg {
+    position: fixed;
+    left: 10px;
+    top: 0;
+    width: 100%;
+  }
 }
 .dataBg-ul {
   padding-left: 0;

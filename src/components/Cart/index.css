@@ -1,7 +1,7 @@
 .cartBg {
   min-height: 90vh;
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
@@ -24,6 +24,9 @@
   border: 1px solid #d8d8d8;
   border-radius: 12px;
 }
+.cartContainer {
+  width: 90%;
+}
 .unOrderedList {
   width: 90%;
   min-height: 210px;
@@ -45,6 +48,20 @@
 
 .unOrderedList::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 768px){
+  .unOrderedList::-webkit-scrollbar {
+  width: 8px;
+  height: 80px;
+}
+.unOrderedList::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.unOrderedList::-webkit-scrollbar-thumb {
+  background-color: #088c03;
+  border-radius: 4px;
+}
 }
 
 .summaryContainer {

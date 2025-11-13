@@ -62,9 +62,6 @@
   align-items: center;
   height: 47px;
   margin-left: 12px;
-  @media screen and (max-width: 768px) {
-    align-items: flex-end;
-  }
 }
 .paragraph1 {
   margin: 0;

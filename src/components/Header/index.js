@@ -2,7 +2,7 @@ import {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {TbLogout2} from 'react-icons/tb'
 import {FiHome} from 'react-icons/fi'
-import {CiShoppingCart} from 'react-icons/ci'
+import {GrCart} from 'react-icons/gr'
 import Cookies from 'js-cookie'
 import MartContext from '../../context/MartContext'
 
@@ -67,14 +67,14 @@ class Header extends Component {
                   <FiHome
                     size={25}
                     className={activeHomeIcon}
-                    onClick={this.activeTabHome}
+                    onClick={() => changeTab('Home')}
                   />
                 </Link>
                 <Link className="navLink" to="/cart">
-                  <CiShoppingCart
+                  <GrCart
                     size={25}
                     className={activeCartIcon}
-                    onClick={this.activeTabCart}
+                    onClick={() => changeTab('Cart')}
                   />
                 </Link>
                 <TbLogout2 size={25} onClick={this.gotoLogin} />

@@ -6,8 +6,8 @@
     "node": ">=16"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "5.11.9",
     "@testing-library/dom": "8.11.3",
+    "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "12.6.2",
     "chalk": "4.1.0",
@@ -20,6 +20,7 @@
     "react-router-dom": "5.3.0"
   },
   "devDependencies": {
+    "caniuse-lite": "1.0.30001754",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",

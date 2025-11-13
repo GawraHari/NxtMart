@@ -73,6 +73,12 @@
   padding-left: 8px;
   font-size: 18px;
 }
+
+@media screen and (max-width: 768px){
+  .inputContainer input{
+    padding-left: 0px;
+  }
+}
 .vrt {
   gap: 16px;
   align-self: center;

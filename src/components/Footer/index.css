@@ -13,10 +13,17 @@
   padding-right: 80px;
   padding-bottom: 48px;
   padding-left: 80px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     display: none;
   }
 }
+
+@media screen and (max-width: 769px) {
+    .footerbg{
+      display: none;
+    }
+}
+
 .ft1 {
   width: 40%;
   height: 144px;
