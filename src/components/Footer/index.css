@@ -19,9 +19,9 @@
 }
 
 @media screen and (max-width: 769px) {
-    .footerbg{
-      display: none;
-    }
+  .footerbg {
+    display: none;
+  }
 }
 
 .ft1 {

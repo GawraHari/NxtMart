@@ -50,18 +50,18 @@
   display: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .unOrderedList::-webkit-scrollbar {
-  width: 8px;
-  height: 80px;
-}
-.unOrderedList::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-.unOrderedList::-webkit-scrollbar-thumb {
-  background-color: #088c03;
-  border-radius: 4px;
-}
+    width: 8px;
+    height: 80px;
+  }
+  .unOrderedList::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  .unOrderedList::-webkit-scrollbar-thumb {
+    background-color: #088c03;
+    border-radius: 4px;
+  }
 }
 
 .summaryContainer {

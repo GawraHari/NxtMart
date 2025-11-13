@@ -74,8 +74,8 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px){
-  .inputContainer input{
+@media screen and (max-width: 768px) {
+  .inputContainer input {
     padding-left: 0px;
   }
 }
