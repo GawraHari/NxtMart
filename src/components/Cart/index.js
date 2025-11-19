@@ -96,7 +96,7 @@ class Cart extends Component {
                 <div className="cartContainer">
                   <div className="mobileViewCartHeader">
                     <FaArrowLeft
-                      size={20}
+                      size={25}
                       className="backArrow"
                       onClick={this.returnToHome}
                     />
